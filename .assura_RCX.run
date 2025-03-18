@@ -1,0 +1,3 @@
+#!/bin/sh -f
+/share/instsww/cadence/ASSURA41-615/tools/assura/bin/assura /home/ff/ee140/sp18/cadence/DRC_LVS_sims/rcx.inverter.rsf -cdslib /home/ff/ee140/sp18/cadence/cds.lib
+exit $?

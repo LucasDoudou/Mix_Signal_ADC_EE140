@@ -1,0 +1,152 @@
+
+            Assura (R) Physical Verification Version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17
+            Release 4.1_USR4_HF25
+
+Copyright (c) Cadence Design Systems. All rights reserved.
+@(#)$CDS: assura_64 version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 08/31/2015 04:49 (sjfql463) $
+sub-version 4.1_USR4_HF25, integ signature 2015-08-28-0751
+
+run on hpse-10.EECS.Berkeley.EDU from /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/assura/bin/64bit/assura on Tue Feb  6 19:05:03 2018
+
+
+Loading tech rule set file : /home/ff/ee140/sp18/gpdk/gpdk045/assura/techRuleSets
+Checking out 1 license for Assura_RCX
+
+Starting /share/instsww/cadence/ASSURA41-615/tools/assura/bin/rcxToDfII /home/ff/ee140/sp18/cadence/DRC_LVS_sims/rcx.inverter.rsf -t -cdslib /home/ff/ee140/sp18/cadence/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.11s.
+@(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 08/31/2015 04:54 (sjfql463) $
+sub-version 4.1_USR4_HF25, integ signature 2015-08-28-0751
+
+run on hpse-10.EECS.Berkeley.EDU from /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/assura/bin/64bit/rcxToDfII on Tue Feb  6 19:05:05 2018
+
+
+Loading tech rule set file : /home/ff/ee140/sp18/gpdk/gpdk045/assura/techRuleSets
+*WARNING* LIB US_8ths from File /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib Line 4 redefines
+LIB US_8ths from File /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE US_8ths
+before DEFINE US_8ths
+    in /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib
+Or remove or comment out DEFINE US_8ths
+    in /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* LIB basic from File /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib Line 5 redefines
+LIB basic from File /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib
+Or remove or comment out DEFINE basic
+    in /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* LIB ee140_project from File /home/ff/ee140/sp18/cadence/cds.lib Line 10 redefines
+LIB ee140_project from the same file (defined earlier.)
+*WARNING* The directory: '/home/ff/ee140/sp18/cadence/ee140_gsi' does not exist
+	but was defined in libFile '/home/ff/ee140/sp18/cadence/cds.lib' for Lib 'ee140_project'.
+*WARNING* LIB US_8ths from File /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib Line 4 redefines
+LIB US_8ths from File /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE US_8ths
+before DEFINE US_8ths
+    in /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib
+Or remove or comment out DEFINE US_8ths
+    in /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* LIB basic from File /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib Line 5 redefines
+LIB basic from File /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /home/ff/ee140/sp18/gpdk/gpdk045/cds.lib
+Or remove or comment out DEFINE basic
+    in /share/instsww/cadence/ASSURA-615.04.14.125/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* LIB ee140_project from File /home/ff/ee140/sp18/cadence/cds.lib Line 10 redefines
+LIB ee140_project from the same file (defined earlier.)
+*WARNING* The directory: '/home/ff/ee140/sp18/cadence/ee140_gsi' does not exist
+	but was defined in libFile '/home/ff/ee140/sp18/cadence/cds.lib' for Lib 'ee140_project'.
+Loading gpdk045/libInit.il ...
+	Loading gpdk045/loadCxt.ile ... done!
+	Loading context 'gpdk045' from library 'gpdk045' ... done!
+	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+	Loading gpdk045/gpdk045_customFilter.il ... done!
+	Loading gpdk045/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 45nm PDK                       *           
+  *                        (gpdk045)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 4.0 (17-June-2014)
+
+done!
+Loaded gpdk045/libInit.il successfully!
+function gsclib045_stretch redefined
+function gsclib045_round redefined
+function gsclib045_cellTmplCB redefined
+function gsclib045_stretch redefined
+function gsclib045_round redefined
+function gsclib045_cellTmplCB redefined
+function gsclib045_stretch redefined
+function gsclib045_round redefined
+function gsclib045_cellTmplCB redefined
+function gsclib045_stretch redefined
+function gsclib045_round redefined
+function gsclib045_cellTmplCB redefined
+function gsclib045_stretch redefined
+function gsclib045_round redefined
+function gsclib045_cellTmplCB redefined
+function gsclib045_stretch redefined
+function gsclib045_round redefined
+function gsclib045_cellTmplCB redefined
+*WARNING* No library model for device "g45inda".
+*WARNING* (DB-270211): dbOpenCellViewByType: Failed to open cellview (g45cmim ivpcell) from lib (gpdk045) in 'r' mode because cellview does not exist, or cellview type is not recognized by dbOpenCellViewByType.
+*WARNING* No library model for device "g45cmim ivpcell gpdk045".
+*WARNING* No library model for device "g45inds".
+
+Finished /share/instsww/cadence/ASSURA41-615/tools/assura/bin/rcxToDfII
+
+Starting /share/instsww/cadence/ASSURA41-615/tools/assura/bin/avRCXxref /home/ff/ee140/sp18/cadence/DRC_LVS_sims/rcx.inverter.rsf
+@(#)$CDS: avRCXxref_64 version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 08/31/2015 04:50 (sjfql463) $
+sub-version 4.1_USR4_HF25, integ signature 2015-08-28-0751
+run on hpse-10.EECS.Berkeley.EDU at Tue Feb  6 19:05:05 2018
+Reading rsf
+
+Finished /share/instsww/cadence/ASSURA41-615/tools/assura/bin/avRCXxref
+Constructing the RCX run script
+
+*** ASSURA capgen VERSION 3.2 Red Hat Linux release 7.2 (Enigma) - (07/07/2010-10:53)  ***
+
+
+**********************************************************************
+*				    				     *
+*	   (c) Copyright 2018, Cadence Design Systems, Inc.	     *
+*			 All rights reserved.			     *
+*				    				     *
+*  This software is the confidential and proprietary information of  *
+*  Cadence Design Systems, Inc. and may not be copied or reproduced  *
+*   in whole or in part onto any medium without Cadence's express    *
+*    prior written consent. Unpublished rights reserved under all    *
+*		 copyright laws of the United States.		     *
+*				    				     *
+*		     Cadence Design Systems, Inc.		     *
+*			555 River Oaks Parkway			     *
+*			  San Jose, CA 95134			     *
+*				    				     *
+*				    				     *
+**********************************************************************
+
+
+
+capgen Capgen results will be written to directory: /home/ff/ee140/sp18/cadence/DRC_LVS_sims/inverter
+*WARNING* at "capgen": process layer 'FOX' maps to one or more extraction
+	layers that do not appear in the lvsfile.
+*WARNING* at "capgen": Substrate layer 'FOX' will be automatically generated
+	during extraction due to incomplete p2lvs mapping. This may lead to
+	unintended results.
+*ERROR* at "capgen": -cap_ground_layer 'psubstrate' not defined in LVS file
+quitting.
+Forking:  /share/instsww/cadence/ASSURA41-615/tools/assura/bin/64bit/capgen -techdir /home/ff/ee140/sp18/gpdk/gpdk045/assura/../qrc/typical -lvs /home/ff/ee140/sp18/cadence/DRC_LVS_sims/inverter.xcn -p2lvs /home/ff/ee140/sp18/gpdk/gpdk045/assura/../qrc/typical/p2lvsfile -p poly_conn,allGate,Oxide -canonical_res_caps -length_units meters -exclude_gate_res -cap_ground_layer psubstrate /home/ff/ee140/sp18/cadence/DRC_LVS_sims/inverter
+*WARNING* Bad return status from RCX script generator. 0x100

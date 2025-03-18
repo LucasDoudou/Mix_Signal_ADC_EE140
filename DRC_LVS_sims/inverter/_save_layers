@@ -1,0 +1,27 @@
+FOX nwell_conn
+metal2_conn metal2_conn
+metal3_conn metal3_conn
+metal4_conn metal4_conn
+metal5_conn metal5_conn
+metal6_conn metal6_conn
+metal7_conn metal7_conn
+metal8_conn metal8_conn
+metal9_conn metal9_conn
+metal10_conn metal10_conn
+metal11_conn metal11_conn
+Oxide np_rpdiff_conn p_rpdiff_conn np_rndiff_conn p_rndiff_conn
+cont_pdiff cont_pdiff_metal1_conn_pdiff_conn
+cont_ndiff cont_ndiff_metal1_conn_ndiff_conn
+metal1_conn np_rmetal1_conn p_rmetal1_conn
+poly_conn np_rpoly_conn p_rpoly_conn
+ndiff_conn np_rndiff_conn p_rndiff_conn
+pdiff_conn np_rpdiff_conn p_rpdiff_conn
+nwell_conn nwell_conn.df2
+cont_poly np_rcont_poly p_rcont_poly
+ptap_pdiff_conn_ovia ptap_pdiff_conn_ovia
+ptap np_rptap p_rptap
+pwell_ptap_ovia pwell_ptap_ovia
+pwell np_rpwell p_rpwell
+ntap_ndiff_conn_ovia ntap_ndiff_conn_ovia
+ntap np_rntap p_rntap
+nwell_conn_ntap_ovia nwell_conn_ntap_ovia

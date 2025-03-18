@@ -1,0 +1,37 @@
+WARNING: HOST <cory> DOES NOT APPEAR TO BE A CADENCE SUPPORTED LINUX CONFIGURATION.
+         For More Info,  Please Run '<cdsroot>/tools.lnx86/bin/checkSysConf' <productId>.
+
+Reading file: 
+        /home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl_v2/verilogA/veriloga.va
+Reading link:  /share/instsww/cadence/MMSIM151
+Reading file: 
+        /share/instsww/cadence/MMSIM.15.10.803/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /share/instsww/cadence/MMSIM.15.10.803/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-1546):
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl_v2/verilogA/veriloga.va",
+        line 43: Encountered a range error while accessing the `ic' array using
+        the offset created during genvar/generate unrolling. Use only in-range
+        offsets to access the array.
+    ERROR (VACOMP-1546):
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl_v2/verilogA/veriloga.va",
+        line 44: Encountered a range error while accessing the `id' array using
+        the offset created during genvar/generate unrolling. Use only in-range
+        offsets to access the array.
+    ERROR (VACOMP-1552): "if (V(cmpOut > vth)<<--?  id[`BITS-state+1] = 1;"
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl_v2/verilogA/veriloga.va",
+        line 67: Encountered left operand of type node for operator `>'.
+        Specify a real or an integer type operand instead.
+    ERROR (VACOMP-1193):
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl_v2/verilogA/veriloga.va",
+        line 67: Access function has incorrect argument types. Use node
+        identifiers as the arguments of an access function.
+    ERROR (VACOMP-2259):
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl_v2/verilogA/veriloga.va",
+        line 67: syntax error.
+    ERROR (VACOMP-1808): file:
+        /home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl_v2/verilogA/veriloga.va.
+        Non-recoverable error: parser error:  confused context stack.
+    ERROR (VACOMP-1816): Exiting AHDL compilation.

@@ -1,0 +1,20 @@
+;; Cadence Initial Configuration File
+;; Created by Aviral Pandey in Fall 2023
+;; Goal is to setup cadence to make it easier to use for students
+
+;; Load Bind key Files
+load("leBindKeys.il")
+
+;; Fixes an annoying CDF bug where added pins don't always netlist
+envSetVal("auCore.misc", "updateCDFtermOrder" 'boolean t)
+
+;; Setup the Simulation Folder to be in the home directory
+envSetVal("asimenv.startup" "projectDir" "~/simulation")
+
+;; Launch Library Manager on Startup
+ddsOpenLibManager()
+
+;; Load the Environment Configuration
+;; Contains a bunch of other nice configuration things
+envLoadFile("./.cdsenv")
+

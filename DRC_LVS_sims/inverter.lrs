@@ -1,0 +1,35 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.12 11/02/2017 22:41 (sjfnl729) $
+sub-version 4.1_USR5_HF13, integ signature 2017-11-02-2043
+run on hpse-10.EECS.Berkeley.EDU at Mon Feb 12 20:35:07 2018
+
+Schematic                     | Layout                     | Status
+-------------------------------------------------------------------------------
+inverter schematic lab1       | inverter layout lab1       | matched        
+
+Schematic and Layout Match
+
+Schematic:
+  Library:lab1
+  Cell   :inverter
+  View   :schematic
+
+Layout:
+  Library:lab1
+  Cell   :inverter
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

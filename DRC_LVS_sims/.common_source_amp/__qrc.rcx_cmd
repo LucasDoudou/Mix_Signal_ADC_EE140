@@ -1,0 +1,50 @@
+avParameters(
+	?cellName "common_source_amp"
+	?viewName "layout"
+	?inputLayout ( "DFII" "EE140_LAB0" )
+	?cdslib "/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/cds.lib"
+	?runName "common_source_amp"
+	?workingDirectory "/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/DRC_LVS_sims"
+	?techRuleSet ( "rcx_typical" )
+	?techLib "/home/ff/ee140/sp18/gpdk/gpdk045/assura_tech.lib"
+	?technology "gpdk045_av"
+
+)
+rcxParameters(
+	?capCouplingFactor 1.0
+	?capGround "myGND"
+	?mFactorR "infinite"
+	?arrayViasSpacing "auto"
+	?macroCellsType "default"
+	?maxFractureLength "infinite"
+	?fractureLengthUnits "MICRONS"
+	?maxMergedViaSize "auto"
+	?netNameSpace "schematic"
+	?resGateDefaultFactor 2
+	?mergeParallelR nil
+	?minR 0.001
+	?lvsSource "assura"
+	?capacitor "pcapacitor"
+	?capPropName "c"
+	?checkCellView nil
+	?capModels "no"
+	?parasiticCapModels "no"
+	?parasiticResModels "no"
+	?resModels "no"
+	?resistor "presistor"
+	?resPropName "r"
+	?outputFormat "dfii"
+	?lvsExtractedCellView nil
+	?extractedView "av_extracted"
+	?runName "common_source_amp"
+	?tempdir "/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/DRC_LVS_sims/common_source_amp/rcx_temp"
+	?rcxSetupDir ( "/home/ff/ee140/sp18/gpdk/gpdk045/./assura/../qrc/typical" )
+	?temperature ( 25.0 )
+	?type "full"
+	?extract "both"
+	?capExtractMode "decoupled"
+
+)
+(avRCX)
+
+

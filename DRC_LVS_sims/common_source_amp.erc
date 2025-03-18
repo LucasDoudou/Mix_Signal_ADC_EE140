@@ -1,0 +1,22 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'common_source_amp layout EE140_LAB0':
+  info: Assign pin label "output" at (0.7750, 2.9550) to layer `metal2_conn'.
+  info: Assign pin label "input" at (0.1600, -0.2100) to layer `metal1_conn'.
+  info: Assign pin label "myGND" at (0.5150, 2.4650) to layer `metal1_conn'.
+  info: Assign pin label "myVDD" at (0.0050, 2.9950) to layer `metal1_conn'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'common_source_amp layout EE140_LAB0':
+  info: Assign pin label "output" at (0.7750, 2.9550) to layer `metal2_conn'.
+  info: Assign pin label "input" at (0.1600, -0.2100) to layer `metal1_conn'.
+  info: Assign pin label "myGND" at (0.5150, 2.4650) to layer `metal1_conn'.
+  info: Assign pin label "myVDD" at (0.0050, 2.9950) to layer `metal1_conn'.
+
+***** End of Label Report *****
+

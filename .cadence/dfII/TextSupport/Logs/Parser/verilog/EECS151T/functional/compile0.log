@@ -1,0 +1,28 @@
+ncvlog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+INCLUDE $CDS_INST_DIR/share/cdssetup/cds.lib
+|
+ncvlog: *W,DLCPTH (./cds.lib,3): cds.lib No such file '/share/instsww/cadence/INCISIVE152/share/cdssetup/cds.lib' (cds.lib command ignored).
+DEFINE EE140_LAB0 /home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0
+|
+ncvlog: *W,DLCPTH (./cds.lib,15): cds.lib Invalid path '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' (cds.lib command ignored).
+TOOL:	ncvlog(64)	15.20-s086: Started on Mar 17, 2025 at 20:02:29 PDT
+ncvlog
+    -use5x
+    -SPECIFICUNIT Inverter_test
+    -zparse /tmp/vamsZparw54280
+    -NOWARN DLNOHV
+    -work EECS151T
+    -view functional
+    -nostdout
+    -logfile /home/cc/ee140/sp25/class/ee140-abc/cadence/.cadence/dfII/TextSupport/Logs/Parser/verilog/EECS151T/functional/compile0.log
+    -messages
+    -cdslib /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib
+    /home/cc/ee140/sp25/class/ee140-abc/cadence/EECS151T/Inverter_test/functional/verilog.v
+
+file: /home/cc/ee140/sp25/class/ee140-abc/cadence/EECS151T/Inverter_test/functional/verilog.v
+	module EECS151T.Inverter_test:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+TOOL:	ncvlog(64)	15.20-s086: Exiting on Mar 17, 2025 at 20:02:29 PDT  (total: 00:00:00)

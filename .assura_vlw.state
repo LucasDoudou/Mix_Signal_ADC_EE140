@@ -1,0 +1,30 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.25 09/19/22 00:11 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura VLW saved state
+;----------------------------------------------------------------------------
+
+vuiLayerListOrder  =  "Alphabetical"
+vuiLayerList  = '(
+		("Via1" 2991 "Via1 = groupVias(  via(Via1) conn1(metal2_conn) conn2(metal1_conn) )" 2 8 t "y0 (drawing)" t)
+		("_nmos1v" 459 "_nmos1v = geomAndNot( L89552 L26526 )" 0 13 t "y0 (drawing)" t)
+		("_nmos1v_MOS_2" 601 "_nmos1v_MOS_2 = extractMOS(\"g45n1svt\" _nmos1v (poly_conn \"G\") (ndiff_conn \"S\" \"D\") (pwell \"B\"..." 0 15 t "y1 (drawing)" t)
+		("_resnsppoly" 337 "_resnsppoly = geomAndNot( L4294 Nwell )" 0 16 t "y2 (drawing)" t)
+		("_resnsppoly_RES_37" 2050 "_resnsppoly_RES_37 = extractRES(\"g45rnspp\" _resnsppoly (poly_conn \"PLUS\" \"MINUS\") (pwell \"B\") (spi..." 0 14 t "y3 (drawing)" t)
+		("cont_ndiff" 2994 "cont_ndiff = groupVias(  via(cont_ndiff) conn1(metal1_conn) conn2(npn_emit nd..." 1 9 t "y3 (drawing)" t)
+		("cont_pdiff" 2987 "cont_pdiff = groupVias(  via(cont_pdiff) conn1(metal1_conn) conn2(pdiff_conn ..." 1 7 t "y4 (drawing)" t)
+		("cont_poly" 2985 "cont_poly = groupVias(  via(cont_poly) conn1(metal1_conn) conn2(poly_conn) )" 1 5 t "y5 (drawing)" t)
+		("metal1_conn" 203 "metal1_conn = geomAndNot( Metal1 M1Resdum )" 0 11 t "y6 (drawing)" t)
+		("metal1_conn_pintext" 86 "metal1_conn_pintext = pinText( \"Metal1\" )" 0 0 t "y9 (drawing)" t)
+		("metal2_conn" 204 "metal2_conn = geomAndNot( Metal2 M2Resdum )" 0 12 t "y0 (drawing)" t)
+		("metal2_conn_pintext" 88 "metal2_conn_pintext = pinText( \"Metal2\" )" 0 1 t "y1 (drawing)" t)
+		("ndiff_conn" 236 "ndiff_conn = geomAndNot( ndiff Resdum )" 0 4 t "y8 (drawing)" t)
+		("pdiff_conn" 231 "pdiff_conn = geomAndNot( pdiff Resdum )" 0 2 t "y1 (drawing)" t)
+		("poly_conn" 233 "poly_conn = geomAndNot( Poly Resdum )" 0 3 t "y2 (drawing)" t)
+		("ptap" 296 "ptap = geomAndNot( L65704 PNPdummy )" 0 10 t "y5 (drawing)" t)
+		("pwell" 386 "pwell = geomAndNot( T?385 psub_R )" 0 6 t "y2 (drawing)" t)
+)

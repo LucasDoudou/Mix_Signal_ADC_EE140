@@ -1,0 +1,6 @@
+#!/bin/sh -f
+#--------------------------------------------------------------------------------------
+# THE RUN FILE created by Cadence Extraction Quantus UI Version 22.1.1-p041
+#--------------------------------------------------------------------------------------
+
+qrc  -log_file /home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/DRC_LVS_sims/qrc.common_source_amp.log -cmd /home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/DRC_LVS_sims/qrc.common_source_amp.ccl 

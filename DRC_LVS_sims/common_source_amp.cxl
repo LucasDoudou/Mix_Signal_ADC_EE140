@@ -1,0 +1,19 @@
+C g45rnspp(RES) g45rnspp(RES)
+N PLUS PLUS
+N MINUS MINUS
+N B B
+
+C g45n1svt(MOS) g45n1svt(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "common_source_amp schematic EE140_LAB0" "common_source_amp layout EE140_LAB0"
+N input input
+N output output
+N myVDD myVDD
+N myGND myGND
+I NM0 avD2_1
+I R0 avD37_1
+

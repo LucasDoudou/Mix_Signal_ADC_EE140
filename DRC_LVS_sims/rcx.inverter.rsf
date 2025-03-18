@@ -1,0 +1,79 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 08/31/15 04:19 (sjfql463) $
+; sub-version 4.1_USR4_HF25
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura RCX UI
+;----------------------------------------------------------------------------
+
+avParameters(
+	?workingDirectory "/home/ff/ee140/sp18/cadence/DRC_LVS_sims"
+	?runName "inverter"
+	?inputLayout ( "df2" "lab1" )
+	?cellName "inverter"
+	?viewName "layout"
+	?technology "gpdk045_av"
+	?techRuleSet "rcx_typical"
+	?techLib "/home/ff/ee140/sp18/gpdk/gpdk045/assura_tech.lib"
+)
+
+
+
+;----------------------------------------------------------------------------
+; RSF include(/home/ff/ee140/sp18/gpdk/gpdk045/assura/LVSinclude.rsf) Section
+; Specified in the Assura RCX UI
+;----------------------------------------------------------------------------
+
+; LVS include used for GPDK 45nm LVS
+
+avCompareRules(
+
+  bind( net("*[*]" "*<*>") )
+
+  mergeSplitGate( sameOrder )
+  autoPinSwap(t 3000)
+  expandOnError((pins t) (swap t) (reduce t) (swapThres t))
+)
+
+
+;----------------------------------------------------------------------------
+; rcxParameter Section
+; Created by the Assura RCX UI
+;----------------------------------------------------------------------------
+
+rcxParameters(
+	?outputFormat   "dfII"
+	?extractedView  "av_extracted"
+	?checkCellView	nil
+	?resistor	"presistor"
+	?resPropName	"r"
+	?capacitor	"pcapacitor"
+	?capPropName	"c"
+	?extract    "both"
+	?netNameSpace   "schematic"
+	?maxFractureLength  "infinite"
+	?fractureLengthUnits    "microns"
+	?temperature    25.0
+	?capExtractMode "decoupled"
+	?capGround  "gnd!"
+	?capCouplingFactor  1.0
+	?type   "full"
+	?rcxfsType  "none"
+	?minR  0.001
+	?mFactorR  "infinite"
+	?maxMergedViaSize  "auto"
+	?arrayViasSpacing  "auto"
+	?capModels  "no"
+	?parasiticCapModels  "no"
+	?resModels  "no"
+	?parasiticResModels  "comment"
+	?parasiticResWidth  nil
+	?parasiticResWidthDrawn  nil
+	?runName  "inverter"
+	?tempdir "/home/ff/ee140/sp18/cadence/DRC_LVS_sims"
+)
+setShellEnvVar("CDS_AUTO_CKOUT=all")
+avRCX()

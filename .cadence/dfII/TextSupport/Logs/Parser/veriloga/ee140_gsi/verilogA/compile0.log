@@ -1,0 +1,35 @@
+WARNING: HOST <cory> DOES NOT APPEAR TO BE A CADENCE SUPPORTED LINUX CONFIGURATION.
+         For More Info,  Please Run '<cdsroot>/tools.lnx86/bin/checkSysConf' <productId>.
+
+Reading file: 
+        /home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl/verilogA/veriloga.va
+Reading link: 
+        /share/instsww/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading link:  /share/instsww/cadence/MMSIM151
+Reading file: 
+        /share/instsww/cadence/MMSIM.15.10.803/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading link: 
+        /share/instsww/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/disciplines.h
+Reading file: 
+        /share/instsww/cadence/MMSIM.15.10.803/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-1182): "mask      = 8'b10000000;<<--? "
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl/verilogA/veriloga.va",
+        line 54: The target of the assignment is a vector. Specify a scalar as
+        the target of the assignment.
+    ERROR (VACOMP-1562):
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl/verilogA/veriloga.va",
+        line 54: Encountered invalid assignment. Cannot write to the identifier
+        on the left-hand-side of this assignment.
+    ERROR (VACOMP-2212): "results       =<<--?  8'b00000000;"
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl/verilogA/veriloga.va",
+        line 55: Encountered undeclared identifier: results. Declare the
+        identifier before using it.
+Warning from spectre during AHDL compile.
+    WARNING (VACOMP-1135):
+        "/home/ff/ee140/sp18/cadence/ee140_gsi/sar_cntrl/verilogA/veriloga.va",
+        line 36: The variable 'mask' is used and no value is assigned to it.
+        The default value is 0 for integer, 0.0 for real, and "" for string. If
+        you want to use a value other than the default value, assign a value to
+        this variable and then use it.

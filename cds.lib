@@ -1,0 +1,20 @@
+# EE 140/240A Spring 2025
+# Report any issues to Rahul Lall (rklall@berkeley.edu)
+INCLUDE $CDS_INST_DIR/share/cdssetup/cds.lib
+INCLUDE /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
+
+INCLUDE /home/ff/ee140/fa18/gpdk/giolib045/cds.lib
+INCLUDE /home/ff/ee140/fa18/gpdk/gsclib045_all/cds.lib
+INCLUDE /home/ff/ee140/fa18/gpdk/gsclib045_svt/cds.lib
+INCLUDE ./sky130_release_0.0.4/cds.lib
+
+DEFINE avTech /share/instsww/cadence/ASSURA41-617/tools.lnx86/assura/etc/avtech/avTech
+
+
+
+DEFINE EE140_LAB0 /home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0
+#Removed by ddDeleteObj: DEFINE EE140_LAB1 /home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB1
+DEFINE lab2 /home/cc/ee140/sp25/class/ee140-abc/cadence/lab2
+DEFINE lab4 /home/cc/ee140/sp25/class/ee140-abc/cadence/lab4
+#Removed by ddDeleteObj: DEFINE EE151T /home/cc/ee140/sp25/class/ee140-abc/cadence/EE151T
+DEFINE EECS151T /home/cc/ee140/sp25/class/ee140-abc/cadence/EECS151T

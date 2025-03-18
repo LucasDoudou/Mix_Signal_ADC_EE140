@@ -1,0 +1,86 @@
+*
+*
+*
+*                       LINUX           Wed Aug 30 11:51:28 2023
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 22.1.1-p041
+*  Build Date     : Mon Apr 17 07:36:05 PDT 2023
+*
+*  HSPICE LIBRARY
+*
+*  QRC_TECH_DIR /home/ff/ee140/sp18/gpdk/gpdk045/qrc/typical 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT common_source_amp input myGND myVDD output
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD2_1	myGND#3	input#1	output#3	myGND#4
++ nmos1v#20ivpcell#20gpdk045	L=1e-07	W=2e-06
++ AD=3e-13	AS=3e-13	PD=4.3e-06	PS=4.3e-06	M=2
++ scc=0.000250629 scb=0.00388258 sca=6.67515 sb=1.4e-07 sa=4e-07
+*
+*
+*       CANONICAL RESISTOR AND CAP/DIODE CARDS
+*
+RavD37_1	output#1	avC5#4	wSim=5e-07 lSim=3e-06	$SUB=myGND#4 
+RavD37_2	myVDD#1	avC5#2	wSim=5e-07 lSim=3e-06	$SUB=myGND#4 
+*
+*       PARASITIC RESISTOR AND CAP/DIODE CARDS
+*
+Rj1	output#4	output	1.270625	$X=0.775 $Y=2.397
+Rj2	output#6	output	0.523921	$X=0.775 $Y=2.956
+Rk1	myVDD#2	myVDD	15.225103	$X=0.0755 $Y=2.995
+Rk18	avC5#3	avC5	30.500229	$X=0.765 $Y=6.295
+Rk3	input#1	input	15.395586	$X=0.393 $Y=-0.21
+Rk5	myGND#3	myGND#2	0.223197	$X=1.035 $Y=2.2825
+Rk8	myGND#3	myGND	0.251333	$X=0.515 $Y=2.2825
+Rk12	myGND#10	myGND	0.161011	$X=0.64 $Y=2.465
+Rk13	myGND#10	myGND#11	0.084414	$X=0.765 $Y=2.465
+Rk14	myGND#2	myGND#11	0.094526	$X=1.005 $Y=2.465
+Rk15	myGND#3	myGND#4	12.400000	$X=0.775 $Y=2.1
+Rk16	myGND#10	myGND#4	6.888889	$X=0.765 $Y=2.465
+Rk2	output#3	output#4	4.687500	$X=0.775 $Y=0.89
+Rk17	output#6	output#2	15.241063	$X=0.8925 $Y=2.995
+Rl2	myVDD#1	myVDD#2	3.613360	$X=0.365 $Y=3.055
+Rl1	avC5	avC5#2	3.613360	$X=0.365 $Y=6.235
+Rl5	avC5#3	avC5#4	3.613360	$X=1.165 $Y=6.235
+Rl6	output#1	output#2	3.613360	$X=1.165 $Y=3.055
+*
+*       CAPACITOR CARDS
+*
+*
+C1	input	myGND	2.75893e-17	$X=0.261 $Y=-0.2105
+C2	myVDD	myGND	1.64848e-17	$X=0.0245 $Y=2.994
+C3	output	myGND	2.95034e-17	$X=0.774 $Y=2.6755
+C4	avC5	myGND	2.65076e-17	$X=0.4395 $Y=6.294
+C5	avC5#4	myGND	2.13275e-16	$X=1.164 $Y=5.4935
+C6	output#1	myGND	2.40759e-16	$X=1.164 $Y=3.7935
+C7	avC5#2	myGND	2.13275e-16	$X=0.3645 $Y=5.4935
+C8	myVDD#1	myGND	2.4486e-16	$X=0.3645 $Y=3.7935
+C9	input#1	myGND	2.67055e-16	$X=0.7485 $Y=0.357
+C10	avC5#3	myGND	2.64415e-17	$X=1.0895 $Y=6.294
+C11	output#2	myGND	1.93769e-17	$X=1.153 $Y=2.994
+C12	myVDD#2	myGND	2.62063e-17	$X=0.345 $Y=2.994
+C13	output#6	myGND	4.00746e-17	$X=0.774 $Y=3.0005
+C14	output#4	myGND	4.64521e-16	$X=0.774 $Y=1.0155
+C15	output#3	myGND	2.42051e-18	$X=0.774 $Y=0.889
+*
+*
+.ENDS common_source_amp
+*

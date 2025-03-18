@@ -1,0 +1,17 @@
+# 3
+g45rnspp(RES): g45rnspp(RES)
+= PLUS PLUS B
+= MINUS MINUS B
+= B B I
+# 4
+g45n1svt(MOS): g45n1svt(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 5
+common_source_amp schematic EE140_LAB0: common_source_amp layout EE140_LAB0
+= input input B
+= myGND myGND B
+= myVDD myVDD B
+= output output B

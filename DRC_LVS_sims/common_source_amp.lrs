@@ -1,0 +1,35 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.25 09/19/2022 00:41 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-09-19-0008
+run on eda-1.EECS.Berkeley.EDU at Wed Aug 30 11:44:53 2023
+
+Schematic                             | Layout                             | Status
+-------------------------------------------------------------------------------------
+common_source_amp schematic EE140_LAB0| common_source_amp layout EE140_LAB0| matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:EE140_LAB0
+  Cell   :common_source_amp
+  View   :schematic
+
+Layout:
+  Library:EE140_LAB0
+  Cell   :common_source_amp
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

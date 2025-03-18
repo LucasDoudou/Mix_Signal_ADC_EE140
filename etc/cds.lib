@@ -1,0 +1,6 @@
+# File Created by EE140_Instructor at Fri Nov  3 14:45:33 2017
+# assisted by CdsLibEditor
+INCLUDE $CDS_INST_DIR/share/cdssetup/cds.lib
+DEFINE avTech /share/instsww/cadence/ASSURA41-617/tools/assura/etc/avtech/avTech
+SOFTINCLUDE /share/instsww/cadence/IC617/share/cdssetup/cds.lib
+SOFTINCLUDE /usr/local/cadence/IC617/share/cdssetup/cds.lib
