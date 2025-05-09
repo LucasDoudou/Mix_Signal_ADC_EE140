@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("LDO_MUX_PGA_ADC" "testbench_vx" "schematic" "spectre")
+descriptionText = "None"

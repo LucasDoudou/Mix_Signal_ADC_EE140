@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("MUX_Proj" "4to1MUX_tb" "schematic" "spectre")
+descriptionText = "None"

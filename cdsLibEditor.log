@@ -1,91 +1,12 @@
-\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/11/2017 00:42 (sjfhw302) $
-\o Sub version:		sub-version  s059 
-\o Arguments:		-display localhost:11.0 -mpssession virtuoso13981 -mpshost cory -namespace CDBA -cdslib /home/ff/ee140/sp18/cadence/cds.lib 
-\o Working Directory:	cory:/home/ff/ee140/sp18/cadence
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 01/17/2024 18:09 (csvcm36c-7) $
+\o Sub version:		sub-version  s353 
+\o Arguments:		-cdslib /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib -mpssession virtuoso138705 -mpshost eda-3.EECS.Berkeley.EDU -mpsversion 6.18 
+\o Working Directory:	eda-3.EECS.Berkeley.EDU:/home/cc/ee140/sp25/class/ee140-abc/cadence
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
-\o Qt version: 		4.8.5
+\o Qt version: 		5.9.1
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 0 0)
-\o Active cell: 0 0 "cdsDefTechLib"
-\a nrResizeWindow(cdsLibEditor list(3 101 500 400))
-\a nrListItemAction(cdsLibEditor->mainTable 23 1)
-\o Active cell: 23 1 ""
-\a cdsLibEditor->editAddLibButton->value = t
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18/cadence"
-\a newLibraryDialog->useMappedName->value = nil
-\a nrSetWindowVisibility(newLibraryDialog "show")
-\a nrSetCurrentWindow(newLibraryDialog)
-\a nrResizeWindow(newLibraryDialog list(0 90 531 513))
-\a newLibraryDialog->dirListWidget->value = ".."
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18/cadence/.."
-\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18"
-\a newLibraryDialog->dirListWidget->value = nil
-\a newLibraryDialog->dirListWidget->value = ".."
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18/.."
-\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140"
-\a newLibraryDialog->dirListWidget->value = nil
-\a newLibraryDialog->dirListWidget->value = "Downloads"
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/Downloads"
-\a nrListItemAction(newLibraryDialog->dirListWidget 7 0)
-\a newLibraryDialog->dirListWidget->value = nil
-\a newLibraryDialog->libraryListBox->value = "project_testbench"
-\a newLibraryDialog->useMappedName->value = t
-\a newLibraryDialog->libraryName->value = "project_testbench"
-\a newLibraryDialog->okButton->value = t
-\a nrListItemRename(cdsLibEditor->mainTable, 23 1 "/home/ff/ee140/Downloads/project_testbench")
-\a newLibraryDialog->libraryListBox->value = nil
-\a newLibraryDialog->useMappedName->value = nil
-\a newLibraryDialog->libraryName->value = ""
-\a nrListItemAction(cdsLibEditor->mainTable 24 0)
-\o Active cell: 24 0 ""
-\a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 24 1)
-\o Active cell: 24 1 ""
-\a cdsLibEditor->editAddLibButton->value = t
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18/cadence"
-\a nrSetWindowVisibility(newLibraryDialog "show")
-\a nrSetCurrentWindow(newLibraryDialog)
-\a nrResizeWindow(newLibraryDialog list(0 90 531 513))
-\a newLibraryDialog->dirListWidget->value = ".."
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18/cadence/.."
-\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18"
-\a newLibraryDialog->dirListWidget->value = nil
-\a newLibraryDialog->dirListWidget->value = ".."
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/sp18/.."
-\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140"
-\a newLibraryDialog->dirListWidget->value = nil
-\a newLibraryDialog->dirListWidget->value = "Downloads"
-\a newLibraryDialog->filePathComboBox->value = "/home/ff/ee140/Downloads"
-\a nrListItemAction(newLibraryDialog->dirListWidget 7 0)
-\a newLibraryDialog->dirListWidget->value = nil
-\a newLibraryDialog->libraryListBox->value = "lab5_testbench_orig"
-\a newLibraryDialog->useMappedName->value = t
-\a newLibraryDialog->libraryName->value = "lab5_testbench_orig"
-\a nrListItemAction(newLibraryDialog->libraryListBox 0 0)
-\a newLibraryDialog->libraryListBox->value = nil
-\a newLibraryDialog->useMappedName->value = nil
-\a newLibraryDialog->libraryName->value = ""
-\a newLibraryDialog->libraryListBox->value = "lab5_testbench_orig"
-\a newLibraryDialog->useMappedName->value = t
-\a newLibraryDialog->libraryName->value = "lab5_testbench_orig"
-\a newLibraryDialog->okButton->value = t
-\a nrListItemRename(cdsLibEditor->mainTable, 24 1 "/home/ff/ee140/Downloads/lab5_testbench_orig")
-\a newLibraryDialog->libraryListBox->value = nil
-\a newLibraryDialog->useMappedName->value = nil
-\a newLibraryDialog->libraryName->value = ""
-\a nrListItemAction(cdsLibEditor->mainTable 25 0)
-\o Active cell: 25 0 ""
-\a nrSetCurrentWindow(cdsLibEditor)
-\a cdsLibEditor->fileExitButton->value = t
-\o QUESTION (CLE-205): You have made changes which have not been saved. \n\nWould you like to save your changes? 
-\a nrSetWindowVisibility(needSaveDialog "show")
-\a nrResizeWindow(needSaveDialog list(69 215 369 136))
-\a nrSetCurrentWindow(needSaveDialog)
-\a needSaveDialog->yesButton->value = t
-\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a nrResizeWindow(cdsLibEditor list(0 27 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 43 0)
+\o Active cell: 43 0 ""
 \a exit(0)

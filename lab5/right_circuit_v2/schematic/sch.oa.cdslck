@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ee140-abc
+HostName                       eda-3.EECS.Berkeley.EDU
+ProcessIdentifier              2570769
+ProcessCreationTime_UTC        1743910426
+ProcessCreationTime_Readable   Sat Apr  5 20:33:46 2025 PDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/cc/ee140/sp25/class/ee140-abc/cadence/lab5/right_circuit_v2/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed Apr  9 21:52:29 2025 PDT

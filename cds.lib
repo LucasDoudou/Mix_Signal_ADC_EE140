@@ -18,3 +18,33 @@ DEFINE lab2 /home/cc/ee140/sp25/class/ee140-abc/cadence/lab2
 DEFINE lab4 /home/cc/ee140/sp25/class/ee140-abc/cadence/lab4
 #Removed by ddDeleteObj: DEFINE EE151T /home/cc/ee140/sp25/class/ee140-abc/cadence/EE151T
 DEFINE EECS151T /home/cc/ee140/sp25/class/ee140-abc/cadence/EECS151T
+DEFINE lab5 /home/cc/ee140/sp25/class/ee140-abc/cadence/lab5
+DEFINE lab6 /home/cc/ee140/sp25/class/ee140-abc/cadence/lab6
+DEFINE Shared_Files /home/cc/ee140/sp25/class/ee140-abc/cadence/Shared_Files
+DEFINE PGA_Lab7 /home/cc/ee140/sp25/class/ee140-abc/cadence/PGA_Lab7
+#Removed by ddDeleteObj: DEFINE ADC_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_Proj
+DEFINE StrongArm_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/StrongArm_Proj
+DEFINE BDG_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/BDG_Proj
+#Removed by ddDeleteObj: DEFINE LDO_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/LDO_Proj
+#Removed by ddDeleteObj: DEFINE PGA_Prjo /home/cc/ee140/sp25/class/ee140-abc/cadence/PGA_Prjo
+DEFINE PGA_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/PGA_Proj
+#Removed by ddDeleteObj: DEFINE PGA_proj /home/cc/ee140/sp25/class/ee140-abc/cadence/PGA_proj
+DEFINE PGA_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/PGA_Proj
+DEFINE ADC_test /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_test
+DEFINE MUX_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/MUX_Proj
+DEFINE ADC_unlock /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_unlock
+#Removed by ddDeleteObj: DEFINE ADC_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_Proj
+DEFINE ADC_test /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_test
+DEFINE ADC_unlock /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_unlock
+DEFINE LDO_MUX_PGA /home/cc/ee140/sp25/class/ee140-abc/cadence/LDO_MUX_PGA
+DEFINE ADC_unlock /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_unlock
+#Removed by ddDeleteObj: DEFINE SAR_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/SAR_Proj
+DEFINE SAR_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/SAR_Proj
+DEFINE ADC_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_Proj
+DEFINE LDO_MUX_PGA_ADC /home/cc/ee140/sp25/class/ee140-abc/cadence/LDO_MUX_PGA_ADC
+#Removed by ddDeleteObj: DEFINE ADC_Proj_v1 /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_Proj_v1
+DEFINE ADC_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_Proj
+#Removed by ddDeleteObj: DEFINE Final_Proj_Test /home/cc/ee140/sp25/class/ee140-abc/cadence/Final_Proj_Test
+DEFINE LDO_Proj_vtest /home/cc/ee140/sp25/class/ee140-abc/cadence/LDO_Proj_vtest
+DEFINE LDO_Proj /home/cc/ee140/sp25/class/ee140-abc/cadence/LDO_Proj
+DEFINE Final_Proj_Testbench /home/cc/ee140/sp25/class/ee140-abc/cadence/Final_Proj_Testbench

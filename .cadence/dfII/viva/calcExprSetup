@@ -1,1 +1,2 @@
 artistResMgrCalcExprSetup("true" "plot" "dc_vpos" "VS("/V_pos")")
+artistResMgrCalcExprSetup("false" "plot" "VIN" "(VT("/VIN1") - VT("/VIN2"))")

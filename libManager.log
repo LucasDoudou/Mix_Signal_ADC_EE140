@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 01/17/2024 18:07 (csvcm36c-7) $
 \o Sub version:		sub-version  s353 
-\o Arguments:		-mpssession virtuoso2239018 -mpshost eda-3.EECS.Berkeley.EDU 
+\o Arguments:		-mpssession virtuoso3860888 -mpshost eda-3.EECS.Berkeley.EDU 
 \o Working Directory:	eda-3.EECS.Berkeley.EDU:/home/cc/ee140/sp25/class/ee140-abc/cadence
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -9,7 +9,7 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellComboFilter->value = "npn"
 \a cdsLibManager->cellComboFilter->value = ""
-\a nrResizeWindow(cdsLibManager list(122 79 602 491))
+\a nrResizeWindow(cdsLibManager list(280 288 602 491))
 \o MPS virtuoso types registered: 65
 \o changeWorkingDir("/home/cc/ee140/sp25/class/ee140-abc/cadence") unnecessary.
 \o ddSetForcedLib("") unnecessary.
@@ -54,15 +54,51 @@
 \w Or remove or comment out DEFINE basic
 \w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
 \w to suppress this warning message.
+\w Warning: LIB PGA_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 32 redefines
+\w LIB PGA_Proj from the same file (defined earlier.)
+\w Warning: LIB ADC_test from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 37 redefines
+\w LIB ADC_test from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 38 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 40 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 46 redefines
+\w LIB ADC_Proj from the same file (defined earlier.)
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_unlock' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_unlock'.
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_test' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_test'.
 \w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
 \w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
 \o Library Manager customization server connected.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\a lmgrLogShowPopup("mainListPopup1" 67 65 2 "")
-\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a cdsLibManager->libListBox->value = "EECS151T"
+\a cdsLibManager->libLineEdit->value = "EECS151T"
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a cdsLibManager->libListBox->value = "GSCLIB045_SVT"
+\a cdsLibManager->libLineEdit->value = "GSCLIB045_SVT"
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->cellListBox->value = "Final_TB2"
+\a cdsLibManager->cellLineEdit->value = "Final_TB2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
 \w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
 \w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
 \w Insert UNDEFINE analogLib
@@ -103,13 +139,79 @@
 \w Or remove or comment out DEFINE basic
 \w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
 \w to suppress this warning message.
+\w Warning: LIB PGA_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 32 redefines
+\w LIB PGA_Proj from the same file (defined earlier.)
+\w Warning: LIB ADC_test from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 37 redefines
+\w LIB ADC_test from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 38 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 40 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 46 redefines
+\w LIB ADC_Proj from the same file (defined earlier.)
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_unlock' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_unlock'.
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_test' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_test'.
 \w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
 \w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a cdsLibManager->cellListBox->value = "Final_TB2"
+\a cdsLibManager->cellLineEdit->value = "Final_TB2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Final_TB2"
+\a cdsLibManager->cellLineEdit->value = "Final_TB2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 68 44 2 "Final_TB2")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "Final_TB2"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "Final_TB2"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(461 409 239 190))
+\a basicRenameForm->basicRenameToEdit->value = "Final_TBx"
+\a nrDialogAccept(basicRenameForm)
+\a basicRenameForm->OK->value = t
+\w Warning: Can't obtain lock details for the lock file
+\w /home/cc/ee140/sp25/class/ee140-abc/cadence/Final_Proj_Testbench/Final_TB2/spectre_state1/waveformSetup_ws.state.cdslck.
+\w Lock on the file path "/home/cc/ee140/sp25/class/ee140-abc/cadence/Final_Proj_Testbench/Final_TB2/spectre_state1/waveformSetup_ws.state" is refused since it is a directory.
+\o Renaming Cell "Final_TB2" to "Final_TBx" in library "Final_Proj_Testbench".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(446 438 268 133))
+\o Rename succeeded.
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
 \w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
 \w Insert UNDEFINE analogLib
@@ -150,151 +252,96 @@
 \w Or remove or comment out DEFINE basic
 \w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
 \w to suppress this warning message.
+\w Warning: LIB PGA_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 32 redefines
+\w LIB PGA_Proj from the same file (defined earlier.)
+\w Warning: LIB ADC_test from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 37 redefines
+\w LIB ADC_test from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 38 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 40 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 46 redefines
+\w LIB ADC_Proj from the same file (defined earlier.)
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_unlock' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_unlock'.
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_test' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_test'.
 \w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
 \w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a nrResizeWindow(workingDialogForm list(445 409 268 133))
+\a nrResizeWindow(basicRenameForm list(460 380 239 190))
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Final_TBx"
+\a cdsLibManager->cellLineEdit->value = "Final_TBx"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Final_TBx"
+\a cdsLibManager->cellLineEdit->value = "Final_TBx"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Final_TBx"
+\a cdsLibManager->cellLineEdit->value = "Final_TBx"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Final_TBx"
+\a cdsLibManager->cellLineEdit->value = "Final_TBx"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 83 38 2 "Final_TBx")
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup1" 43 43 2 "Final_TBx")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "Final_TBx"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(462 438 239 190))
+\a basicRenameForm->basicRenameToEdit->value = "Final_TB_fail"
+\a nrDialogAccept(basicRenameForm)
+\a basicRenameForm->OK->value = t
+\w Warning: Can't obtain lock details for the lock file
+\w /home/cc/ee140/sp25/class/ee140-abc/cadence/Final_Proj_Testbench/Final_TBx/spectre_state1/waveformSetup_ws.state.cdslck.
+\w Lock on the file path "/home/cc/ee140/sp25/class/ee140-abc/cadence/Final_Proj_Testbench/Final_TBx/spectre_state1/waveformSetup_ws.state" is refused since it is a directory.
+\o Renaming Cell "Final_TBx" to "Final_TB_fail" in library "Final_Proj_Testbench".
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(447 467 268 133))
+\o Rename succeeded.
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
 \w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
 \w Insert UNDEFINE analogLib
@@ -335,240 +382,131 @@
 \w Or remove or comment out DEFINE basic
 \w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
 \w to suppress this warning message.
+\w Warning: LIB PGA_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 32 redefines
+\w LIB PGA_Proj from the same file (defined earlier.)
+\w Warning: LIB ADC_test from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 37 redefines
+\w LIB ADC_test from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 38 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_unlock from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 40 redefines
+\w LIB ADC_unlock from the same file (defined earlier.)
+\w Warning: LIB ADC_Proj from File /home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib Line 46 redefines
+\w LIB ADC_Proj from the same file (defined earlier.)
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_unlock' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_unlock'.
+\w Warning: The directory: '/home/cc/ee140/sp25/class/ee140-abc/cadence/ADC_test' does not exist
+\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'ADC_test'.
 \w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
 \w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\o DB was auto refreshed.
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\o DB was auto refreshed.
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 3 redefines
-\w LIB analogLib from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB US_8ths from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 4 redefines
-\w LIB US_8ths from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE US_8ths
-\w before DEFINE US_8ths
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE US_8ths
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib Line 5 redefines
-\w LIB basic from File /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /share/instsww/cadence/IC.06.18.350/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB analogLib from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 1 redefines
-\w LIB analogLib from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE analogLib
-\w before DEFINE analogLib
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE analogLib
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: LIB basic from File /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib Line 2 redefines
-\w LIB basic from File /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w Insert UNDEFINE basic
-\w before DEFINE basic
-\w     in /home/cc/ee140/sp25/class/ee140-abc/cadence/sky130_release_0.0.4/cds.lib
-\w Or remove or comment out DEFINE basic
-\w     in /home/ff/ee140/fa18/gpdk/gpdk045/cds.lib
-\w to suppress this warning message.
-\w Warning: The directory: '/home/cc/ee140/fa23/staff/ee140-taa/EE140A/cadence/EE140_LAB0' does not exist
-\w 	but was defined in libFile '/home/cc/ee140/sp25/class/ee140-abc/cadence/cds.lib' for Lib 'EE140_LAB0'.
-\a cdsLibManager->libListBox->value = "lab4"
-\a cdsLibManager->libLineEdit->value = "lab4"
-\o DB was auto refreshed.
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a nrResizeWindow(workingDialogForm list(446 438 268 133))
+\a nrResizeWindow(basicRenameForm list(461 409 239 190))
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EECS151T"
+\a cdsLibManager->libLineEdit->value = "EECS151T"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a cdsLibManager->libListBox->value = "PGA_Proj"
+\a cdsLibManager->libLineEdit->value = "PGA_Proj"
+\a cdsLibManager->cellListBox->value = "NAND"
+\a cdsLibManager->cellLineEdit->value = "NAND"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "tb_PGA_v1"
+\a cdsLibManager->cellLineEdit->value = "tb_PGA_v1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TG"
+\a cdsLibManager->cellLineEdit->value = "TG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "tb_PGA_v1"
+\a cdsLibManager->cellLineEdit->value = "tb_PGA_v1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "PGA_Lab7"
+\a cdsLibManager->libLineEdit->value = "PGA_Lab7"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "tb_PGA_v1"
+\a cdsLibManager->cellLineEdit->value = "tb_PGA_v1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "PGA_Proj"
+\a cdsLibManager->libLineEdit->value = "PGA_Proj"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "tb_PGA_v1"
+\a cdsLibManager->cellLineEdit->value = "tb_PGA_v1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "SAR_Proj"
+\a cdsLibManager->libLineEdit->value = "SAR_Proj"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "EECS151T"
+\a cdsLibManager->libLineEdit->value = "EECS151T"
+\a cdsLibManager->libListBox->value = "Final_Proj_Testbench"
+\a cdsLibManager->libLineEdit->value = "Final_Proj_Testbench"
+\a cdsLibManager->cellListBox->value = "Final_TB"
+\a cdsLibManager->cellLineEdit->value = "Final_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrResizeWindow(cdsLibManager list(280 128 602 491))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)
